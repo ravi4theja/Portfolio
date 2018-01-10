@@ -6,14 +6,8 @@ import { App } from './index';
 
 describe('App', () => {
 
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = shallow(<App />);
-  })
-
   it('should render without crashing', () => {
-    expect(wrapper.exists()).to.be.true;
+   
   })
 
 })
