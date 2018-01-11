@@ -35,6 +35,9 @@ const styles = {
   },
   marginR20: {
     marginRight: 20
+  },
+  popperClose: {
+    pointerEvents: 'none'
   }
 }
 
@@ -57,13 +60,9 @@ export class App extends Component {
   }
 
   handleClickResume = () => {
-    // this.setState(prevState => ({
-    //   viewResume: true
-    // }), () => console.log(this.state))
-
-    this.setState({
+    this.setState(prevState => ({
       viewResume: true
-    }, () => console.log(this.state))
+    }))
   }
   
   render() {
